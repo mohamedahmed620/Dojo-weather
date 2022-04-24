@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dojo weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h2>Dojo Weather</h2>
+            <ul id="cities">
+                <li onclick="alert(change_city(this))">Burbank</li>
+                <li onclick="alert(change_city(this))">Chicago</li>
+                <li onclick="alert(change_city(this))">Dallas</li>
+            </ul>
+        </div>
+        <div id="main_block">
+            <div id="main_block_header">
+                <h2>San Jose</h2>
+                <div id="temp_options">
+                    <h3>show temperature in</h3>
+                    <select name="C or F" onchange="change_temp(this)">
+                        <option value="C">C</option>
+                        <option value="F">F</option>
+                    </select>
+                </div>
+            </div>    
+            <div id="main_info">
+                <div id="today">
+                    <h3>Today</h3>
+                    <img src="assets/some_rain.png" alt="Some rain">
+                    <p class ="day_conditions">Some rain</p>
+                    <p class ="h_temp today_h">24</p>
+                    <p class ="l_temp today_l">18</p>
+                </div>
+                <div id="tomorrow">
+                    <h3>Tomorrow</h3>
+                    <img src="assets/some_sun.png" alt="Some sun">
+                    <p class ="day_conditions">Some sun</p>
+                    <p class ="h_temp Tomorrow_h">27</p>
+                    <p class ="l_temp Tomorrow_l">19</p>
+                </div>
+                <div id="friday">
+                    <h3>Friday</h3>
+                    <img src="assets/some_clouds.png" alt="Some clouds">
+                    <p class ="day_conditions">Some clouds</p>
+                    <p class ="h_temp friday_h">21</p>
+                    <p class ="l_temp friday_l">16</p>
+                </div>
+                <div id="saturday">
+                    <h3>Saturday</h3>
+                    <img src="assets/some_sun.png" alt="Some sun">
+                    <p class ="day_conditions">Some sun</p>
+                    <p class ="h_temp saturday_h">26</p>
+                    <p class ="l_temp saturday_l">21</p>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <div id="pop_up" onclick="remove_pop_up(this)">
+        <img src="assets/cookie.png" alt="cookie img">
+        <div id="pop_up_writting">
+            <h2>Stop! Cookie time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic.<a href="#">Read more</a> </p>
+        </div>
+        <button>I accept</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
